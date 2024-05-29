@@ -40,11 +40,10 @@ body {
   text-underline-offset: 3px;
 }
 
-.header__logo {
+.header__logo-image {
   margin-right: 183px;
-  min-width: 148px;
-  min-height: 105px;
-  background: url('../images/logo-black.svg') no-repeat center;
+  width: 148px;
+  height: 105px;
 }
 
 .address {
@@ -70,7 +69,7 @@ body {
 
 .cover {
   position: relative;
-  min-height: 757px;
+  min-height: 753px;
   background: url(../images/cover.jpg) no-repeat center / cover;
 }
 
