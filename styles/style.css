@@ -7,11 +7,11 @@
 
 body {
   max-width: 1100px;
-  min-height: 3028px;
+  height: 100%;
 }
 
 .header {
-  margin: 70px 24px 96px;
+  margin: 92px 24px 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +65,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover {
@@ -75,9 +75,10 @@ body {
 }
 
 .cover__title {
-  position: absolute;
-  top: 165px;
-  left: 48px;
+  position: relative;
+  padding-top: 165px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -86,39 +87,42 @@ body {
   line-height: 115px;
   color: #FFF;
   text-transform: uppercase;
+  letter-spacing: 0.3em;
   z-index: 1;
 }
 
-.aligned-text.letter-spacing-extended,
-.aligned-text_center.letter-spacing-extended,
-.aligned-text_right.letter-spacing-extended {
-  letter-spacing: 0.3em;
+.aligned-text {
+  display: block;
 }
 
-.letter-spacing-extended.no-letter-spacing {
-  margin-left: -22px;
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .aligned-text_center {
-  margin-left: 286px;
+  text-align: center;
 }
 
 .aligned-text_right {
-  margin-left: 584px;
+  text-align: right;
 }
 
 .cover__description {
+  position: relative;
   display: flex;
   justify-content: space-between;
   z-index: 1;
 }
 
 .cover__description-text {
-  position: absolute;
-  bottom: 62px;
-  left: 78px;
+  position: relative;
   color: #FFF;
-  margin-right: 79px;
+  margin-top: 135px;
+  margin-left: 78px;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
@@ -128,10 +132,10 @@ body {
 }
 
 .bet-button {
-  position: absolute;
+  position: relative;
+  margin-top: 123px;
+  margin-right: 50px;
   border: 1px solid #FFF;
-  bottom: 51px;
-  right: 49px;
   min-width: 256px;
   min-height: 51px;
   text-align: center;
@@ -145,14 +149,12 @@ body {
 }
 
 .lots {
-  position: relative;
-  top: 160px;
   margin: 0 24px;
   min-height: 692px;
 }
 
 .lots__heading {
-  position: absolute;
+  margin-top: 179px;
   margin-left: 40px;
   font-weight: 700;
   font-size: 40px;
@@ -168,11 +170,12 @@ body {
   gap: 25px;
   flex-wrap: wrap;
   margin-top: 22px;
+  margin-bottom: 30px;
 }
 
 .lots__card-list-item {
   max-width: 334px;
-  height: 563px;
+  min-height: 563px;
   flex-grow: 1;
   list-style: none;
 }
@@ -180,7 +183,6 @@ body {
 .card-link {
   display: block;
   height: 100%;
-  margin-top: 70px;
 }
 
 article {
@@ -192,6 +194,7 @@ article {
 }
 
 .card__title {
+  position: relative;
   max-width: 254px;
   margin-left: 40px;
   padding-top: 50px;
@@ -207,6 +210,7 @@ article {
 }
 
 .card__text {
+  position: relative;
   max-width: 254px;
   margin-left: 40px;
   margin-bottom: 48px;
@@ -218,24 +222,23 @@ article {
   z-index: 1;
 }
 
-.card_type_film {
+.card-link>article {
   position: relative;
+}
+
+.card_type_film {
   background: url(../images/card-lot-01.jpg) no-repeat center / cover;
 }
 
 .card_type_book {
-  position: relative;
   background: url(../images/card-lot-02.jpg) no-repeat center / cover;
 }
 
 .card_type_picture {
-  position: relative;
   background: url(../images/card-lot-03.jpg) no-repeat center / cover;
 }
 
 .lots__look-more-link {
-  position: absolute;
-  margin-top: 101px;
   margin-left: 41px;
   font-size: 20px;
   font-weight: 400;
@@ -245,7 +248,7 @@ article {
 }
 
 .about {
-  margin-top: 340px;
+  margin-top: 181px;
   display: flex;
 }
 
@@ -266,20 +269,21 @@ article {
   height: 114px;
 }
 
-.about__title {
-  margin-top: 101px;
+.about__title,
+.about__text {
+  margin-top: 100px;
   margin-left: 75px;
+}
+
+.about__title {
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
   text-align: left;
   text-transform: uppercase;
-
 }
 
 .about__text {
-  margin-top: 100px;
-  margin-left: 72px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -296,17 +300,14 @@ article {
 .about__text p:last-child {
   max-width: 693px;
   display: block;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  letter-spacing: 0em;
+  letter-spacing: 0;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   margin-top: 180px;
+  margin-bottom: 88px;
 }
 
 .footer li {
