@@ -69,6 +69,7 @@ body {
 
 .cover {
   position: relative;
+  top: -5px;
   min-height: 753px;
   background: url(../images/cover.jpg) no-repeat center / cover;
 }
@@ -145,7 +146,7 @@ body {
 
 .lots {
   position: relative;
-  top: 160px;
+  top: 155px;
   margin: 0 24px;
   min-height: 692px;
 }
