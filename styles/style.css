@@ -55,6 +55,10 @@ body {
   line-height: 24.3px;
 }
 
+address {
+  font-style: normal;
+}
+
 .header__address>a {
   text-underline-offset: 3px;
 }
@@ -150,7 +154,7 @@ body {
 
 .lots {
   margin: 0 24px;
-  min-height: 692px;
+  height: 100%;
 }
 
 .lots__heading {
